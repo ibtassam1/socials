@@ -90,35 +90,6 @@
       background-color: #0e76a8;
     }
 
-    .twitter:hover,
-    .twitter::after {
-      background-color: #26a7de;
-    }
-
-    .reddit:hover,
-    .reddit::after {
-      background-color: #ff4500;
-    }
-
-    .tiktok:hover,
-    .tiktok::after {
-      background-color: #ff0050;
-    }
-
-    .youtube:hover,
-    .youtube::after {
-      background-color: #FF0000;
-    }
-
-    .pinterest:hover,
-    .pinterest::after {
-      background-color: #c8232c;
-    }
-
-    .telegram:hover,
-    .telegram::after {
-      background-color: #2AABEE;
-    }
 
     .social {
       position: relative;
@@ -139,11 +110,11 @@
 
     <div class="wrapper">
 
-      <!-- Start blog Icon -->
+      <!-- Start website Icon -->
       <div id="blog" onclick="navigate(this.id)" class="fill  blog">
-        <span class="icon"><i class="fa-brands fa-square-github"></i></span>
+        <span class="icon"><i class="fa-solid fa-globe"></i></span>
       </div>
-      <!-- End blog Icon -->
+      <!-- End website Icon -->
 
 
       <!-- Start email Icon -->
@@ -153,18 +124,11 @@
       <!-- End email Icon -->
 
 
-      <!-- Start facebook Icon -->
+      <!-- Start github Icon -->
       <div id="facebook" onclick="navigate(this.id)" class="fill facebook">
-        <span class="icon"><i class="fab fa-facebook"></i></span>
+        <span class="icon"><i class="fa-brands fa-square-github"></i></span>
       </div>
-      <!-- End facebook Icon -->
-
-
-      <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
-        <span class="icon"><i class="fab fa-instagram"></i></span>
-      </div>
-      <!-- End instagram Icon -->
+      <!-- End github Icon -->
 
 
       <!-- Start linkedin Icon -->
@@ -183,13 +147,16 @@
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
         if (id === "blog")
-          window.open("https://ibtassam.com", '_blank').focus(); //Add the url to your blog
+          window.open("https://ibtassam.com", '_blank').focus();
 
         else if (id === "email") {
-          window.open("mailto:ibtassam.rasheed1@ucalgary.ca", '_blank').focus(); //Add your email after "mailto:""
+          window.open("mailto:ibtassam.rasheed1@ucalgary.ca", '_blank').focus();
         }
+        else if (id === "facebook") {
+          window.open("https://www.github.com/ibtassam1", '_blank').focus(); 
+        }        
         else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/in/ibtassam1", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://www.linkedin.com/in/ibtassam1", '_blank').focus();
         }
         
       }
